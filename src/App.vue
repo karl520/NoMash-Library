@@ -5,16 +5,16 @@ import BHeader from './components/BHeader.vue'
 </script>
 
 <template>
-  <div class="main-box">
+  <div class="main-container">
     <header>
       <BHeader />
     </header>
 
-  <main class="main-box">
-    <!--<LibraryRegistrationForm />-->
-    <!-- <JSONLab /> -->
-    <router-view></router-view>
-  </main>
+    <main class="main-box">
+      <!--<LibraryRegistrationForm />-->
+      <!-- <JSONLab /> -->
+      <router-view></router-view>
+    </main>
   </div>
 </template>
 
