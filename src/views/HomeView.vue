@@ -126,6 +126,23 @@ const validatePassword = (blur) => {
               <div v-if="errors.password" class="text-danger">{{ errors.password }}</div>
             </div>
           </div>
+          <div class="col-md-6 col-sm-6">
+    <label for="confirm-password" class="form-label">Confirm password</label>
+    <input
+        type="password"
+        class="form-control"
+        id="confirm-password"
+        v-model="formData.confirmPassword"
+        @blur="() => validateConfirmPassword(true)"
+    />
+    <div v-if="errors.confirmPassword" class="text-danger">
+        {{ errors.confirmPassword }}
+    </div>
+  </div>
+          <div class="mb-3">
+            <label for="reason" class="form-label">Suburb</label>
+            <input type="text" class="form-control" id="suburb" v-bind:value="formData.suburb" />
+          </div>
           <div class="row mb-3">
             <div class="col-md-6 col-sm-6">
               <div class="form-check">
@@ -197,23 +214,8 @@ const validatePassword = (blur) => {
       </div>
     </div>
   </div>
-  <div class="col-md-6 col-sm-6">
-    <label for="confirm-password" class="form-label">Confirm password</label>
-    <input
-        type="password"
-        class="form-control"
-        id="confirm-password"
-        v-model="formData.confirmPassword"
-        @blur="() => validateConfirmPassword(true)"
-    />
-    <div v-if="errors.confirmPassword" class="text-danger">
-        {{ errors.confirmPassword }}
-    </div>
-  </div>
-  <div class="mb-3">
-            <label for="reason" class="form-label">Suburb</label>
-            <input type="text" class="form-control" id="suburb" v-bind:value="formData.suburb" />
-          </div>
+  
+  
 </template>
 
 <style scoped>
