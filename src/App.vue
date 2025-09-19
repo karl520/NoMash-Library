@@ -1,6 +1,6 @@
 <script setup>
 
-import BHeader from './components/BHeader.vue'
+import BHeader from './components/BHeader.vue';
 
 </script>
 

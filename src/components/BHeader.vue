@@ -6,7 +6,7 @@
       <ul class="nav nav-pills">
         <li class="nav-item">
           <router-link to="/" class="nav-link" active-class="active" aria-current="page"
-            >Home (Week 5)</router-link
+            >Home</router-link
           >
         </li>
         <li class="nav-item">
@@ -29,7 +29,6 @@
   </div>
 </template>
 
-
 <style scoped>
 .b-example-divider {
   height: 3rem;
@@ -40,7 +39,6 @@
     inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
     inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
-
 
 .form-control-dark {
   color: #fff;
@@ -54,24 +52,16 @@
   box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
 }
 
-
 .bi {
   vertical-align: -0.125em;
   fill: currentColor;
 }
 
-
 .text-small {
   font-size: 85%;
 }
-
 
 .dropdown-toggle {
   outline: 0;
 }
 </style>
-
-
-
-
-
