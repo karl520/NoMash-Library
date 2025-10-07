@@ -10,5 +10,11 @@
     "database": {
       "port": 9000
     }
+  },
+  "firestore": {
+    "database": "(default)",
+    "location": "australia-southeast1",
+    "rules": "yes",
+    "indexes": "firestore.rules"
   }
 }
