@@ -13,7 +13,7 @@
         </div>
       </div>
   
-      <!-- 主体 -->
+
       <main>
         <div v-if="weatherData">
           <h2>{{ weatherData.name }}, {{ weatherData.sys.country }}</h2>
@@ -28,11 +28,9 @@
   </template>
   
   <script>
-
   import axios from "axios";
   
-  // TODO: 把你的真实 API Key 填到这里
-  const apikey = "YOUR_OPENWEATHERMAP_API_KEY";
+  const apikey = "fcbcd482a305887cc2551c3695aee0be";
   
   export default {
     name: "WeatherView",
